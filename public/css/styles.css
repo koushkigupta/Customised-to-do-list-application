@@ -1,0 +1,86 @@
+body {
+  background-color:white;
+}
+
+.centered {
+  padding-top: 100px;
+  height:100%;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://this.deakin.edu.au/wp-content/uploads/2016/09/study-organised.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.home {
+  margin-top: 220px;
+}
+.card {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.2s ease-in-out;
+  box-sizing: border-box;
+  margin-top:10px;
+  margin-bottom:10px;
+
+  padding: 10px;
+
+      background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgCX8PIWW2QMDtg01Pr2OpP4i5KWH0IWY6DQ&usqp=CAU");
+}
+
+.card:hover {
+  box-shadow: 0 5px 5px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.cardrow{
+  margin: 20px;
+}
+
+
+.card .header {
+  margin-bottom:5px;
+  padding:20px;
+  text-align: center;
+
+}
+
+.active {
+  background-color: rgb(221, 221, 221);
+  color: white;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: #07abb1;
+}
+
+.background {
+  height: 100%;
+  width: 100%;
+  background-image: url("https://www.iamexpat.nl/sites/default/files/styles/ogimage_thumb/public/desk-top.jpg");
+  background-size: cover;
+  position: relative;
+  background-repeat: no-repeat;
+}
+
+.heading {
+  font-size: 60px;
+  font-weight: bold;
+  margin: 30px;
+  margin-left: 55px;
+  font-family: "monospace";
+}
+
+.backgr {
+  background-color: lightblue;
+}
+
+.login {}
+
+.back {
+  margin-top: 30px;
+}
+.additem{
+
+  background:transparent;
+  border: none;
+}

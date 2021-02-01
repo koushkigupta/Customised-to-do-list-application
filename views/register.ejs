@@ -1,0 +1,76 @@
+<html>
+
+<head>
+  <title>To-do List</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-dark bg-dark">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand nav-link" href="/">To do List</a>
+    </div>
+
+    <ul class="nav navbar-nav navbar-right">
+      <li class="navitem"><a class="nav-link" href="/login">Login</a></li>
+
+    </ul>
+  </div>
+</nav>
+
+  <div class="row signup">
+
+
+
+    <form class="background" action="/register" method="POST">
+      <div class="container col-md-6 ">
+        <h1 class="heading col-md-6">Sign Up</h1>
+
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <%- include('partials/alerts') %>
+            <label for="firstname">First Name</label>
+            <input type="firstname" class="form-control" id="firstname" name="firstname" placeholder="First Name" autocomplete="off">
+          </div>
+          <div class="w-100"></div>
+          <div class="form-group col-md-6">
+            <label for="lastname">Last Name</label>
+            <input type="lastname" class="form-control" id="lastname" name="lastname" placeholder="Last Name" autocomplete="off">
+          </div>
+          <div class="w-100"></div>
+          <div class="form-group col-md-6">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Email" autocomplete="off">
+          </div>
+          <div class="w-100"></div>
+          <div class="form-group col-md-6">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+          </div>
+          <div class="w-100"></div>
+          <div class="form-group col-md-6">
+            <label for="confirmpassword">Confirm Password</label>
+            <input type="password" class="form-control" id="confirmpassword" name="confirmpassword" placeholder="Password">
+          </div>
+        </div>
+        <button type="submit" style="background-color: #07abb1;" onclick="return validateForm()" class="btn btn-success">Create Account</button>
+        <br><br><br><br><br>
+      </div>
+
+    </form>
+
+</div>
+</body>
+
+</html>
